@@ -4,8 +4,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css?_v=20240321120138">
-   <link rel="stylesheet" href="files/spollers/spollers.css?_v=20240321120138">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240322114227">
+   <link rel="stylesheet" href="files/spollers/spollers.css?_v=20240322114227">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>Chen Shlomo Hachohen</title>
 </head>
@@ -13,6 +13,17 @@
    <div class="wrapper">
       
       <main>
+
+         <div id="lightboxBlock" class="lightboxBlock hidden">
+            <h3>Fun fact</h3>
+            <p>I have my own lemon tree</p>
+            <picture>
+               <source media="(max-width: 575.98px)" srcset="images/svg/lightbox-block-image-mobile.svg">
+               <source media="(min-width: 576px)" srcset="images/svg/lightbox-block-image.svg">
+               <img src="images/svg/lightbox-block-image.svg" alt="">
+            </picture>
+         </div>
+
          <section class="userFirstScreen">
             <div class="n_container">
                <div class="userFirstScreen__items">
@@ -50,7 +61,7 @@
                      </div>
                   </div>
                   <div data-da="userFirstScreenItemOne, 2, 991" class="userFirstScreen__item">
-                     <a href="#" class="userFirstScreen__plus no-interaction">
+                     <a id="showLightboxBlock" href="#" class="userFirstScreen__plus">
                         <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <mask id="path-1-outside-1_1_584" maskUnits="userSpaceOnUse" x="-1" y="-1" width="32" height="33" fill="black">
                               <rect fill="white" x="-1" y="-1" width="32" height="33"/>
@@ -144,7 +155,8 @@
       
    </div>
 
-   <script src="files/js/dynamic-adapt.js?_v=20240321120138"></script>
-   <script src="files/spollers/spollers.js?_v=20240321120138"></script>
+   <script src="files/js/dynamic-adapt.js?_v=20240322114227"></script>
+   <script src="files/js/script.js?_v=20240322114227"></script>
+   <script src="files/spollers/spollers.js?_v=20240322114227"></script>
 </body>
 </html>

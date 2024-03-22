@@ -492,6 +492,60 @@ template {
 
 /* Page - Home */
 
+.lightboxBlock {
+  background-color: #fff;
+  border: 1px solid #163939;
+  box-shadow: 8px 8px 0 0 #163939;
+  border-radius: 14px;
+  left: 50%;
+  max-width: 100%;
+  min-height: 251px;
+  padding: 19px 26px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: top 0.5s ease 0s;
+  top: 50%;
+  width: 475px;
+  z-index: 5;
+}
+
+.lightboxBlock.hidden {
+  top: -150%;
+}
+
+.lightboxBlock h3,
+.lightboxBlock p {
+  max-width: 63%;
+  text-align: left;
+}
+
+.lightboxBlock h3 {
+  color: #FF0871;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 72px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.lightboxBlock p {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 4px 0 0;
+}
+
+.lightboxBlock img {
+  bottom: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
 .userFirstScreen {
   background-color: #4275CB;
   overflow: hidden;
@@ -1035,6 +1089,27 @@ template {
 
   .userFaq__blockInfo h4 {
     margin-bottom: 7px;
+  }
+}
+
+@media screen and (max-width: 500.98px) {
+  .lightboxBlock {
+    left: 0;
+    min-height: 284px;
+    margin-left: 15px;
+    margin-right: 15px;
+    right: 0;
+    transform: translate(0, -50%);
+    width: calc(100% - 30px);
+  }
+
+  .lightboxBlock h3,
+  .lightboxBlock p {
+    max-width: 57%;
+  }
+
+  .lightboxBlock img {
+    bottom: 19px;
   }
 }
 
